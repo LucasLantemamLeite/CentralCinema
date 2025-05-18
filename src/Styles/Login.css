@@ -1,0 +1,94 @@
+.section-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/Images/myke-simon-atsUqIm3wxo-unsplash.jpg");
+  background-position: center bottom -24rem;
+  background-size: cover;
+  height: 100vh;
+}
+
+.div-master-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff3f5;
+  border-radius: 1.2rem;
+}
+
+.separacao-login {
+  width: 1px;
+  height: 35rem; /* ajusta conforme necessário */
+  background-color: black;
+  border: none;
+}
+
+.div-title-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60rem;
+  gap: 6rem;
+  padding-left: 5rem;
+}
+
+.div-title-login h1 {
+  color: #eb5858;
+}
+
+.div-title-login p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h2 {
+  font-size: 2.5rem;
+  color: #e63535d0;
+}
+
+.div-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35rem;
+}
+
+.div-login form input {
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  outline: none;
+  background-color: #222;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.div-login form button {
+  background-color: #e63535d0;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.div-login form button:hover {
+  background-color: #e7982fce;
+}
