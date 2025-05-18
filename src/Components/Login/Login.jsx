@@ -13,7 +13,7 @@ export default function Login() {
             acessar sua conta de forma segura e prática. Esse projeto é ideal
             para praticar conceitos de autenticação, estruturação de componentes
             em React e estilização com CSS, servindo como ponto de partida para
-            funcionalidades mais avançadas no futuro. Teste
+            funcionalidades mais avançadas no futuro.
           </p>
         </div>
         <hr className="separacao-login" />
