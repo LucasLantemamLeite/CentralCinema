@@ -1,9 +1,18 @@
+import { useState } from "react";
 import "../../Styles/Login.css";
+import Cadastro from "../../Components/Cadastro";
+import Login from "../../Components/Login";
 
-export default function Login() {
+export default function Home() {
+  const [isRegistering, setisRegistering] = useState(false);
+
   return (
     <section className="section-login">
-      <div className="div-master-login">
+      <div
+        className={`div-master-login ${
+          isRegistering ? "register-mode" : "login-mode"
+        }`}
+      >
         <div className="div-title-login">
           <h1>Bem vindo ao FavMovies</h1>
           <p>
@@ -16,22 +25,17 @@ export default function Login() {
             funcionalidades mais avançadas no futuro.
           </p>
         </div>
-        <hr className="separacao-login" />
+        <hr
+          className={`separacao-login ${
+            isRegistering ? "register-mode" : "login-mode"
+          }`}
+        />
         <div className="login-container">
-          <h2>Faça seu Login</h2>
-
-          <div className="div-login">
-            <form>
-              <input type="text" name="user" id="user" placeholder="Usuário" />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Senha"
-              />
-              <button type="submit">Entrar</button>
-            </form>
-          </div>
+          {isRegistering ? (
+            <Cadastro onSwitchHome={() => setisRegistering(false)} />
+          ) : (
+            <Login onSwitchHome={() => setisRegistering(true)} />
+          )}
         </div>
       </div>
     </section>
